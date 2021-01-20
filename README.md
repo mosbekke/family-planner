@@ -1,24 +1,13 @@
 # family-planner
 
-## Project setup
-```
-npm install
-```
+Start:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+    npm run serve
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Create week PDFs:
 
-### Lints and fixes files
-```
-npm run lint
-```
+    ./week-pdfs.sh 3 53
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Merge PDFs:
+
+    ./merge.sh
