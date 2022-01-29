@@ -72,6 +72,7 @@ export default {
       people: [
         'Sarah',
         'Bert',
+        'Tip',
         'Lindy',
         'Casper',
         'Lou & Coco'
@@ -87,27 +88,7 @@ export default {
     })
 
     this.date = date
-
-
-    //     this.date = date
-    //   } else if (this.$route.query.date) {
-    //     const dateStr = this.$route.query.date
-    //     const date = parse(dateStr, "d-L-y", this.date, {
-    //       locale: nl
-    //     })
-
-    //     this.date = date
-    //   }
-    // },
-
-
-    //   this.dateFromRoute()
   },
-  // watch: {
-  //   $route: function () {
-  //     this.dateFromRoute()
-  //   }
-  // },
   computed: {
     columns: function () {
       return this.people.length + 1 + this.extraColumns.length
@@ -123,24 +104,6 @@ export default {
     }
   },
   methods: {
-    // dateFromRoute: function () {
-    //   if (this.$route.query.week) {
-    //     const weekStr = this.$route.query.week
-
-    //     const date = parse(weekStr, "w", this.date, {
-    //       locale: nl
-    //     })
-
-    //     this.date = date
-    //   } else if (this.$route.query.date) {
-    //     const dateStr = this.$route.query.date
-    //     const date = parse(dateStr, "d-L-y", this.date, {
-    //       locale: nl
-    //     })
-
-    //     this.date = date
-    //   }
-    // },
     startOfWeek: function (date) {
       return startOfWeek(date, { locale: nl })
     },
