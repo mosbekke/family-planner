@@ -1,8 +1,9 @@
 /* eslint-disable no-console */
+
 const execa = require('execa')
 const fs = require('fs')
 
-(async () => {
+async function run () {
   try {
     await execa('git', ['checkout', '--orphan', 'gh-pages'])
     // eslint-disable-next-line no-console
@@ -24,4 +25,6 @@ const fs = require('fs')
     console.log(e.message)
     process.exit(1)
   }
-})()
+}
+
+run()
